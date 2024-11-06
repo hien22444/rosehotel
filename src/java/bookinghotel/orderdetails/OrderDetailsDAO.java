@@ -39,6 +39,7 @@ public class OrderDetailsDAO implements Serializable {
                 pst.setString(7, orderDetailsDTO.getCheckOut());
 
                 if (pst.executeUpdate() > 0) {
+                    
                     return true;
                 }
             }

@@ -36,6 +36,7 @@ public class CancelOrderServlet extends HttpServlet {
       OrderDAO orDao = new OrderDAO();
       orDao.updateOrderStatus(orderId, 3);
       response.sendRedirect("MainController?btnAction=ViewOrder");
+      
         } catch (Exception e) {
         }
     } 
